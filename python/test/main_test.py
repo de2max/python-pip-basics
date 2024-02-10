@@ -1,5 +1,6 @@
-from python.src.main import Main
 import unittest
+
+from python.src.lib.Main import Main
 
 
 class TestMain(unittest.TestCase):
