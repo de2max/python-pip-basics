@@ -1,0 +1,14 @@
+[requires]
+python_version = "3.10"
+
+[scripts]
+tests = "pipenv run pytest python/test/ --junitxml=junit_test.xml --cov=python/src/"
+main = "pipenv run python python/src/main.py"
+
+[packages]
+pyspark = "==3.2.3"
+
+[dev-packages]
+pytest = "*"
+pytest-mock = "*"
+pytest-cov = "*"
